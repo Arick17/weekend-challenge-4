@@ -1,13 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>scpros</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>scpros</title>
+  <script src="server/public/vendors/angular.js"></script>
+  <link href="server//public/vendors/css/bootstrap.css" rel="stylesheet">
+  <link href="server/public/styles/styles.css" rel="stylesheet">
+  <script src="server/public/scripts/client.js"></script>
+
 </head>
+
 <body>
-    <h1>The Top 6 Most Winningest Players</h1>
-    
-</body>
+
+  <body ng-app="myApp" ng-controller="myController as vm">
+    <h1>Top 6 Earners in StarCraft II History!</h1>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">
+          <img ng-src="/Users/arickschaibly/prime/Tier2/week-4/weekend-challenge-4/server/public/images/why.jpg" style="width:200px;height:200px;">
+          <button type="button" class="btn btn-info">Info</button>
+          <button type="button" class="btn btn-success">Favorite</button>
+        </div>
+        <div class="col-md-4">
+          <img ng-src="/Users/arickschaibly/prime/Tier2/week-4/weekend-challenge-4/server/public/images/why.jpg" style="width:200px;height:200px;">
+          <button type="button" class="btn btn-info">Info</button>
+          <button type="button" class="btn btn-success">Favorite</button>
+        </div>
+        <div class="col-md-4">
+          <img ng-src="/Users/arickschaibly/prime/Tier2/week-4/weekend-challenge-4/server/public/images/why.jpg" style="width:200px;height:200px;">
+          <button type="button" class="btn btn-info">Info</button>
+          <button type="button" class="btn btn-success">Favorite</button>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <img ng-src="/Users/arickschaibly/prime/Tier2/week-4/weekend-challenge-4/server/public/images/why.jpg" style="width:200px;height:200px;">
+            <button type="button" class="btn btn-info">Info</button>
+            <button type="button" class="btn btn-success">Favorite</button>
+          </div>
+          <div class="col-md-4">
+            <img ng-src="/Users/arickschaibly/prime/Tier2/week-4/weekend-challenge-4/server/public/images/why.jpg" style="width:200px;height:200px;">
+            <button type="button" class="btn btn-info">Info</button>
+            <button type="button" class="btn btn-success">Favorite</button>
+          </div>
+          <div class="col-md-4">
+            <img ng-src="/Users/arickschaibly/prime/Tier2/week-4/weekend-challenge-4/server/public/images/why.jpg" style="width:200px;height:200px;">
+            <button type="button" class="btn btn-info">Info</button>
+            <button type="button" class="btn btn-success">Favorite</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="row">
+              <div class="col-md-8">.col-md-8</div>
+              <div class="col-md-4">.col-md-4</div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">.col-md-4</div>
+              <div class="col-md-4">.col-md-4</div>
+              <div class="col-md-4">.col-md-4</div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">.col-md-6</div>
+              <div class="col-md-6">.col-md-6</div>
+            </div>
+          </div> -->
+
+
+  </body>
+
 </html>
