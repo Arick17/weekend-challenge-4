@@ -16,39 +16,63 @@
 <body>
 
   <body ng-app="myApp" ng-controller="myController as vm">
-    <h1>Top 6 Earners in StarCraft II History!</h1>
+    <h1 class="titleTop">Top 6 Earners in StarCraft II History!</h1>
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-4">
           <img ng-src="/Users/arickschaibly/prime/Tier2/week-4/weekend-challenge-4/server/public/images/why.jpg" style="width:200px;height:200px;">
-          <button type="button" class="btn btn-info">Info</button>
-          <button type="button" class="btn btn-success">Favorite</button>
+          <div class="playerName">MC</div>
+          <button type="button" class="btn btn-info ">Info</button>
+          <button ng-click="FavMC = FavMC + 1" ng-init="FavMC=0" type="button" class="btn btn-success MC">Favorite</button>
+          <span class="fav">
+              Fav'd: {{FavMC}}
+            </span>
         </div>
         <div class="col-md-4">
           <img ng-src="/Users/arickschaibly/prime/Tier2/week-4/weekend-challenge-4/server/public/images/why.jpg" style="width:200px;height:200px;">
-          <button type="button" class="btn btn-info">Info</button>
-          <button type="button" class="btn btn-success">Favorite</button>
+          <div class="playerName">sOs</div>
+          <button type="button" class="btn btn-info sOs">Info</button>
+          <button ng-click="favsE = favsE + 1" ng-init="favsE=0" type="button" class="btn btn-success sOs">Favorite</button>
+          <span class="fav">
+              Fav'd: {{favsE}}
+            </span>
         </div>
         <div class="col-md-4">
           <img ng-src="/Users/arickschaibly/prime/Tier2/week-4/weekend-challenge-4/server/public/images/why.jpg" style="width:200px;height:200px;">
-          <button type="button" class="btn btn-info">Info</button>
-          <button type="button" class="btn btn-success">Favorite</button>
+          <div class="playerName">TY</div>
+          <button type="button" class="btn btn-info TY">Info</button>
+          <button ng-click="favsD = favsD + 1" ng-init="favsD=0" type="button" class="btn btn-success TY">Favorite</button>
+          <span class="fav">
+              Fav'd: {{favsD}}
+            </span>
         </div>
         <div class="row">
           <div class="col-md-4">
             <img ng-src="/Users/arickschaibly/prime/Tier2/week-4/weekend-challenge-4/server/public/images/why.jpg" style="width:200px;height:200px;">
-            <button type="button" class="btn btn-info">Info</button>
-            <button type="button" class="btn btn-success">Favorite</button>
+            <div class="playerName">Life</div>
+            <button type="button" class="btn btn-info Life">Info</button>
+            <button ng-click="favsC = favsC + 1" ng-init="favsC=0" type="button" class="btn btn-success Life">Favorite</button>
+            <span class="fav">
+                Fav'd: {{favsC}}
+              </span>
           </div>
           <div class="col-md-4">
             <img ng-src="/Users/arickschaibly/prime/Tier2/week-4/weekend-challenge-4/server/public/images/why.jpg" style="width:200px;height:200px;">
-            <button type="button" class="btn btn-info">Info</button>
-            <button type="button" class="btn btn-success">Favorite</button>
+            <div class="playerName">INnoVation</div>
+            <button type="button" class="btn btn-info INnoVation">Info</button>
+            <button ng-click="favsB = favsB + 1" ng-init="favsB=0" type="button" class="btn btn-success INnoVation">Favorite</button>
+            <span class="fav">
+                Fav'd: {{favsB}}
+              </span>
           </div>
           <div class="col-md-4">
             <img ng-src="/Users/arickschaibly/prime/Tier2/week-4/weekend-challenge-4/server/public/images/why.jpg" style="width:200px;height:200px;">
-            <button type="button" class="btn btn-info">Info</button>
-            <button type="button" class="btn btn-success">Favorite</button>
+            <div class="playerName">Polt</div>
+            <button type="button" class="btn btn-info Polt">Info</button>
+            <button ng-click="favsA = favsA + 1" ng-init="favsA=0" type="button" class="btn btn-success Polt">Favorite</button>
+            <span class="fav">
+                Fav'd: {{favsA}}
+              </span>
           </div>
         </div>
       </div>
